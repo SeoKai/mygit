@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <input type="text" class="add" />
+      </header>
+      <main></main>
+      <footer></footer>
+    </div>
+    <script>
+      const addE1 = document.querySelector(".add");
+      const mainE1 = document.querySelector("main");
+      addE1.addEventListener("keydown", (e) => {
+        console.log(e.keyCode);
+        if (e.keyCode === 13) {
+          const text = addE1.value;
+          console.log(text);
+
+          mainE1.innerHTML += `<div>${text}</div>`;
+          addE1.value = "";
+        }
+      });
+    </script>
+  </body>
+</html>

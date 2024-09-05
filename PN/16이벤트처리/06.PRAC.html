@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      td {
+        width: 50px;
+        height: 50px;
+        border: 1px solid gray;
+      }
+      input {
+        width: 90%;
+        height: 100%;
+        outline: none;
+        border: 0px;
+      }
+    </style>
+
+    <input id="rownum" placeholder="행의개수입력" style="width: 200px" />
+    <input id="colnum" placeholder="열의개수입력" style="width: 200px" />
+    <button onclick="makemap()">생성</button>
+
+    <hr />
+    <table id="tbl"></table>
+    <script>
+      function makemap() {
+        const rows = document.querySelector("#rownum").value;
+        const col = document.querySelector("#colnum").value;
+
+        document.write(`<table>`);
+        for (i = 0; i < rows; i++) {
+          document.write(`<tr>`);
+          for (j = 0; j < col; j++) {
+            document.write(`<td>${j}</td>`);
+          }
+          document.write(`</tr>`);
+        }
+      }
+    </script>
+  </body>
+</html>

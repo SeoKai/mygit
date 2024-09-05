@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 01 기본
+
+      const fuch = () => {
+        // 상태값
+        let num;
+        // num의 값을 증가
+        const setNum = (n) => {
+          console.log("setNum Call..");
+
+          num = num + n;
+        };
+        //num의 값을 확인
+        const getNum = (n) => {
+          console.log("getNum Call..");
+          return num;
+        };
+      };
+    </script>
+  </body>
+</html>

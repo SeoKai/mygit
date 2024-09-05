@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Note Sans CJK KR";
+        font-style: normal;
+      }
+      label {
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+      p {
+        font-size: 0.7rem;
+      }
+      button {
+        background-color: #f4f6fa;
+        height: 48px;
+        width: 100px;
+        font-size: 1rem;
+      }
+      h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="test.jsp" method="GET">
+      <div>
+        <h3>사람인 아이디로 커리어 관리 끝!</h3>
+      </div>
+      <label>아이디</label>
+      <div>
+        <input
+          type="text"
+          name="id"
+          required
+          placeholder="4~20자리 / 영문, 숫자, 특수문자'_'사용가능"
+          class="form-control"
+        />
+      </div>
+      <label>비밀번호</label>
+      <div>
+        <input
+          type="password"
+          name="password"
+          required
+          placeholder="8~16자리/영문 대소문자, 숫자, 특수문자 조합"
+          class="form-control"
+        /><br />
+        <p>
+          8~16자리 영문 대소문자, 숫자, 특수문자 중 3가지 이상 조합으로
+          만들어주세요.
+        </p>
+      </div>
+      <label>이름</label>
+      <div>
+        <input type="text" name="name" required placeholder="이름 입력" />
+      </div>
+      <label>생년월일</label>
+      <div>
+        <input type="text" name="birth" required placeholder="YYYYMMDD" />
+      </div>
+      <label>휴대폰</label>
+      <p>이메일 인증을 원하시면, <b>이메일 인증하기</b></p>
+      <div>
+        <input
+          type="tel"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+          required
+          placeholder="'-'빼고 숫자만 입력"
+        />
+        <button>인증 요청</button>
+      </div>
+      <label>이메일</label>
+      <div>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="email@saramin.co.kr"
+        />
+        <br />
+        <label>취업에 관련된 정보를 받을 때 필요해요</label>
+      </div>
+      <div>
+        <ul>
+          <h3>약관</h3>
+          <li>
+            <input type="checkbox" name="allagree" />
+            <label>전체 동의</label>
+          </li>
+          <hr />
+          <li>
+            <input type="checkbox" name="agree1" required />
+            <label>(필수) 개인회원 약관에 동의</label>
+          </li>
+          <li>
+            <input type="checkbox" name="agree2" required />
+            <label>(필수) 개인정보 수집 및 이용에 동의</label>
+          </li>
+          <li>
+            <input type="checkbox" name="agree3" />
+            <label>(선택) 위치기반서비스 이용약관에 동의</label>
+          </li>
+          <li>
+            <input type="checkbox" name="agree4" />
+            <label>(선택) 마케팅 정보 수신 동의 - 이메일</label>
+          </li>
+          <li>
+            <input type="checkbox" name="agree4" />
+            <label>(선택) 마케팅 정보 수신 동의 - SMS/MMS</label>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </body>
+</html>

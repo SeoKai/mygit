@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        width: 50px;
+        height: 50px;
+        border: 1px solid gray;
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  -->
+    <script>
+      //행열값은 prompt()로 받습니다.
+      //행값과 열값을 받아서 테이블을 생성합니다.
+      //document.write()와 for문을 사용합니다.
+
+      const rows = prompt("행값을 입력하세요");
+      const col = prompt("열값을 입력하세요");
+
+      document.write(`<table>`);
+      for (i = 0; i < rows; i++) {
+        document.write(`<tr>`);
+        for (j = 0; j < col; j++) {
+          document.write(`<td>${j}</td>`);
+        }
+        document.write(`</tr>`);
+      }
+    </script>
+  </body>
+</html>

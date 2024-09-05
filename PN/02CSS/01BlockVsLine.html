@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 1px solid black;
+        padding: 20px;
+      }
+      span {
+        display: inline;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border: 1px solid black;
+        padding: 20px;
+      }
+      a {
+        display: inline;
+      }
+      img {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+      /*
+          Block Tag = 한 행전체를 차지하는 태그
+          - width : o , height : o
+          - margin : o , padding : o
+          Line Tag = 한 행안에 포함되어지는 태그
+          - width : x , height : x
+          - margin : left|right만 o , padding : o
+          Inline-Block Tag = 한 행안에 포함되어지는 태그
+          - width : o , height : o
+          - margin : o , padding : o
+      */
+    </style>
+  </head>
+  <body>
+    <div>HELLOWORLD</div>
+    <div>HELLOWORLD</div>
+    <hr />
+    <span>HELLOWORLD</span>
+    <span>HELLOWORLD</span>
+    <hr />
+    <a href="">HELLOWORLD</a>
+    <a href="">HELLOWORLD</a>
+    <hr />
+    <img src="./images/고양이.jpg" alt="사진" />
+    <img src="./images/고양이.jpg" alt="사진" />
+    <img src="./images/고양이.jpg" alt="사진" />
+  </body>
+</html>

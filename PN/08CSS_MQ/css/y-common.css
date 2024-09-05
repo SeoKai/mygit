@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+}
+.wrapper > header {
+  height: 60px;
+  border: 1px solid;
+}
+.wrapper > header > .top-header {
+  display: flex;
+}
+
+.wrapper > header > .top-header > .top-logo-icon {
+  display: flex;
+  border: 1px solid blue;
+  height: 60px;
+  width: 190px;
+  justify-content: center;
+  text-align: center;
+}
+.wrapper > header > .top-header > .top-logo-icon > .icon {
+  width: 40px;
+  height: 40px;
+}
+
+.wrapper > header > .top-header > .ser-bar {
+  width: 1000px;
+  background-color: aqua;
+  margin: 0px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper > header > .top-header > .ser-bar > .ser-txt {
+  width: 300px;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px 0px 0px 30px;
+}
+.wrapper > header > .top-header > .ser-bar > .ser-btn {
+  width: 40px;
+  height: 30px;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.wrapper > header > .top-header > .top-logo-icon > .logo > img {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.wrapper > main {
+}
+.wrapper > main > section {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+.wrapper > main > section > aside {
+  width: 250px;
+  height: 100%;
+
+  padding: 10px;
+}
+.wrapper > main > section > aside > .item {
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+.wrapper > main > section > aside > .item > a.login-btn {
+  display: block;
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+.wrapper > main > section > aside > .item > div {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+.wrapper > main > section > aside > .item > div > .icon {
+  width: 45px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper > main > section > aside > .item > div > .title {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.wrapper > main > section > article {
+  width: clac(100% - 250px);
+  height: 100%;
+  border: 1px solid;
+}
